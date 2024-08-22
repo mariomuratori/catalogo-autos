@@ -21,7 +21,7 @@ const Favoritos: React.FC<FavoritosProps> = ({ role }) => {
       return acc;
     }, []);
     setFavoritos(uniqueFavorites);
-    localStorage.setItem('favorites', JSON.stringify(uniqueFavorites)); // Actualiza el almacenamiento local para mantener solo elementos únicos
+    localStorage.setItem('favorites', JSON.stringify(uniqueFavorites));
   }, []);
 
   const handleBackToHome = () => {
@@ -30,7 +30,6 @@ const Favoritos: React.FC<FavoritosProps> = ({ role }) => {
 
   return (
     <div>
-      {/* Botón para volver a la Home */}
       <Box sx={{ mt: 2, mb: 3 }}>
         <Button 
           variant="outlined" 

@@ -8,25 +8,28 @@ const darkTheme = createTheme({
       paper: '#1e1e1e',
     },
     primary: {
-      main: '#864bfa', // Mantiene el color principal en #864bfa
+      main: '#864bfa',
     },
     text: {
       primary: '#ffffff',
       secondary: '#b0b0b0',
     },
   },
+  typography: {
+    fontFamily: 'Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+  },
   components: {
     MuiButton: {
       styleOverrides: {
         startIcon: {
-          color: '#864bfa', // Cambia el color del icono de los botones a #864bfa
+          color: '#864bfa',
         },
       },
     },
     MuiIconButton: {
       styleOverrides: {
         root: {
-          color: '#864bfa', // Cambia el color de los IconButton a #864bfa
+          color: '#864bfa',
         },
       },
     },

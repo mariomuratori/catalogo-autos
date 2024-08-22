@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import DetallesVehiculo from './pages/DetallesVehiculo';
 import Favoritos from './pages/Favoritos';
 import AgregarVehiculo from './pages/AgregarVehiculo';
-import EditarVehiculo from './pages/EditarVehiculo'; // Importa el componente EditarVehiculo
+import EditarVehiculo from './pages/EditarVehiculo';
 import Layout from './components/Layout';
 import { SnackbarProvider } from 'notistack';
 import Login from './pages/Login';
@@ -57,7 +57,7 @@ const App: React.FC = () => {
           />
           <Route 
             path="/editar-vehiculo/:id" 
-            element={user && role === 'equipo' ? <Layout role={role}><EditarVehiculo /></Layout> : <Navigate to="/login" />} 
+            element={user && role === 'admin' ? <Layout role={role}><EditarVehiculo /></Layout> : <Navigate to="/login" />} 
           />
         </Routes>
       </Router>

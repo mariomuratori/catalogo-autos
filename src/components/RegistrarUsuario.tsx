@@ -16,7 +16,6 @@ const RegistrarUsuario: React.FC = () => {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const userId = userCredential.user.uid;
 
-      // Asignar el rol al usuario en Firestore
       await setDoc(doc(db, 'users', userId), { role });
 
       alert('Usuario registrado y rol asignado correctamente');

@@ -71,7 +71,7 @@ const Home: React.FC<HomeProps> = ({ role }) => {
         Catálogo de Vehículos
       </Typography>
 
-      <Box sx={{ mb: 2 }}> {/* Espaciado entre el filtro y las cards */}
+      <Box sx={{ mb: 2 }}>
         <IconButton onClick={handleClick}>
           <FilterListIcon />
         </IconButton>

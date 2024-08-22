@@ -1,5 +1,5 @@
 import React from 'react';
-import RegistrarUsuario from '../components/RegistrarUsuario'; // Ajusta la ruta si es necesario
+import RegistrarUsuario from '../components/RegistrarUsuario';
 
 const AdminPanel: React.FC = () => {
   return (

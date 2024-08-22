@@ -24,7 +24,7 @@ const Login: React.FC = () => {
   const onSubmit = (data: any) => {
     signInWithEmailAndPassword(auth, data.email, data.password)
       .then(() => {
-        navigate('/'); // Redirige a la Home después de iniciar sesión
+        navigate('/');
       })
       .catch((error) => {
         console.error('Error al iniciar sesión:', error);
@@ -51,7 +51,7 @@ const Login: React.FC = () => {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              color: '#fff', // Texto en blanco
+              color: '#fff',
             }}
           >
             <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -68,10 +68,10 @@ const Login: React.FC = () => {
                 margin="normal"
                 required
                 InputProps={{
-                  style: { color: '#fff' }, // Texto en blanco
+                  style: { color: '#fff' },
                 }}
                 InputLabelProps={{
-                  style: { color: '#fff' }, // Etiqueta en blanco
+                  style: { color: '#fff' },
                 }}
               />
               <TextField
@@ -82,16 +82,16 @@ const Login: React.FC = () => {
                 margin="normal"
                 required
                 InputProps={{
-                  style: { color: '#fff' }, // Texto en blanco
+                  style: { color: '#fff' },
                 }}
                 InputLabelProps={{
-                  style: { color: '#fff' }, // Etiqueta en blanco
+                  style: { color: '#fff' },
                 }}
               />
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
                 label="Recordar usuario"
-                sx={{ color: '#fff' }} // Texto del checkbox en blanco
+                sx={{ color: '#fff' }}
               />
               <Button
                 type="submit"

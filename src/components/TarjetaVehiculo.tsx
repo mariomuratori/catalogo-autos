@@ -67,7 +67,7 @@ const TarjetaVehiculo: React.FC<TarjetaVehiculoProps> = ({ vehicle, onDelete, ro
           <IconButton color="secondary" onClick={handleAddToFavorites}>
             <FavoriteIcon />
           </IconButton>
-          {role === 'equipo' && (
+          {role === 'admin' && (
             <IconButton color="primary" component={Link} to={`/editar-vehiculo/${vehicle.id}`}>
               <EditIcon />
             </IconButton>
